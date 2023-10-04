@@ -74,9 +74,7 @@ const governanceProgram = new Program<Idl>(
                 }
             },
             communityMintMaxVoterWeightSource: {
-                supplyFraction: {
-                    0: new BN(10000000000)
-                }
+                supplyFraction: [new BN(10000000000)]
             }
         })
     .accounts({
